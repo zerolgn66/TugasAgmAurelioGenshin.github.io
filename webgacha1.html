@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="webgacha1.css">
+    <title>Genshin Impact</title>
+</head>
+<body>
+    <div class="wish-options">
+        <input type="image" id ="single-wish" src="wish3.jpg" class="single-wish">
+        <input type="image" id ="ten-wish" src="wish.jpg" class="ten-wish">
+    </div>
+
+    <div id="videoWrapper" style="display: none;" class="video1">
+        <video id="resultVideo" autoplay ></video>
+    </div>
+    <div id="resultDumbText1"></div>
+
+
+    <div id="fullscreenImage" class="fullscreen-image">
+        <img src="" alt="Fullscreen Image" class="fullscreen-image">
+    </div>
+
+    <div id="card-container" class="card-container">
+        <!-- Hasil gacha akan ditampilkan di sini -->
+    </div>
+
+
+
+
+    <script src="webgacha1.js"></script>
+    <script>
+        document.getElementById("single-wish").addEventListener("click", singleWish);
+        document.getElementById("ten-wish").addEventListener("click", tenWish);
+        
+    </script>
+</body>
+</html>

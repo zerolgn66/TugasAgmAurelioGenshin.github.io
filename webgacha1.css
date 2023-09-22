@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('banner-zhongli.jpeg');
+    background-size: 100% 100%; /* Ubah ukuran background sesuai kebutuhan */
+    background-attachment: absolute;
+    height: 100vh;
+    overflow: hidden;
+    cursor: url('cursor.png'), auto;
+}
+
+.ten-wish {
+/* Ini adalah gaya dasar untuk tombol */
+ /* Menjadikan gambar sebagai latar belakang */
+    background-image: none;
+    background-size: none; /* Menyesuaikan gambar ke ukuran tombol */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    border: none; /* Menghilangkan border */
+    width: 265px;
+    height: 58px;
+ /* Mengubah ikon kursor saat di atas tombol */
+    right: 5px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.single-wish {
+    background-image: none;
+    background-size: none; /* Menyesuaikan gambar ke ukuran tombol */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    border: none; /* Menghilangkan border */
+    width: 275px;
+    height: 60px;
+    right: 20%;
+    bottom: 5px; /* Mengubah ikon kursor saat di atas tombol */
+    position: absolute;
+}
+
+
+video::-webkit-media-controls {
+        display: none !important;
+    }
+/* Mengatur elemen <input> dengan class 'custom-input' agar kursor default */
+input{
+    cursor: url('cursor.png'), auto;
+}
+
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    z-index: 9999;
+    text-align: center;
+    overflow: hidden;
+}
+
+.fullscreen-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
